@@ -26,6 +26,8 @@ Or install it yourself as:
 foo = ReadonlyStruct.new(baz: :bar)
 
 foo.baz # => :bar
+
+foo.foo_bar # => NoMethodError
 ```
 
 If you attempt to call a method that was not defined within the initialize hash, unlike `OpenStruct`, `ReadonlyStruct` will raise a Not Implemented error.
